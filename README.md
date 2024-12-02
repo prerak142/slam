@@ -48,3 +48,12 @@ sudo apt install ros-humble-rmw-cyclonedds-cpp
 dont ugrade update again
 ![image](https://github.com/user-attachments/assets/e5fdabe0-96da-45a6-a284-ae9c333c6d37)
 ![image](https://github.com/user-attachments/assets/9b5a14cc-7890-48d9-94d4-db30a7b2696f)
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+
+
+echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
+source ~/.bashrc
+
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
